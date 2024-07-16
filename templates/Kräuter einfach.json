@@ -1,0 +1,92 @@
+{
+  "aspectRatio": [16, 9],
+  "resources": {
+    "domine": {
+      "type": "font",
+      "source": {
+        "type": "embed",
+        "value": "Domine-Regular.ttf"
+      }
+    },
+    "background": {
+      "type": "image",
+      "source": {
+        "type": "embed",
+        "value": "background.png"
+      }
+    },
+    "title": {
+      "type": "text",
+      "label": "Titel",
+      "source": {
+        "type": "input"
+      }
+    },
+    "subtitle": {
+      "type": "text",
+      "label": "Untertitel",
+      "source": {
+        "type": "input"
+      }
+    },
+    "image": {
+      "type": "image",
+      "label": "Bild",
+      "source": {
+        "type": "input"
+      }
+    }
+  },
+  "elements": [
+    {
+      "type": "image",
+      "resource": "image",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 0,
+        "height": 100
+      },
+      "options": {
+        "center": true
+      }
+    },
+    {
+      "type": "text",
+      "resource": "title",
+      "position": {
+        "x": 0,
+        "y": 30
+      },
+      "size": {
+        "width": 100,
+        "height": 30
+      },
+      "options": {
+        "center": true,
+        "color": [255, 255, 255],
+        "font": {
+          "name": "domine"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "resource": "subtitle",
+      "position": {
+        "x": 0,
+        "y": 65
+      },
+      "size": {
+        "width": 100,
+        "height": 15
+      },
+      "options": {
+        "center": true,
+        "color": [255, 255, 255]
+      }
+    }
+  ]
+}

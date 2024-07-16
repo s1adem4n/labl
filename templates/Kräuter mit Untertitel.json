@@ -1,0 +1,62 @@
+{
+  "aspectRatio": [5, 4],
+  "resources": {
+    "inter": {
+      "type": "font",
+      "source": {
+        "type": "embed",
+        "value": "Inter-Regular.ttf"
+      }
+    },
+    "background": {
+      "type": "image",
+      "label": "Kraut (Hintergrund)",
+      "source": {
+        "type": "input"
+      }
+    },
+    "subtitle": {
+      "type": "text",
+      "label": "Untertitel",
+      "source": {
+        "type": "input"
+      }
+    }
+  },
+  "elements": [
+    {
+      "type": "image",
+      "resource": "background",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 0,
+        "height": 100
+      },
+      "options": {
+        "center": true
+      }
+    },
+    {
+      "type": "text",
+      "resource": "subtitle",
+      "position": {
+        "x": 0,
+        "y": 82
+      },
+      "size": {
+        "width": 100,
+        "height": 8
+      },
+      "options": {
+        "center": true,
+        "color": [0, 0, 0],
+        "font": {
+          "name": "inter"
+        }
+      }
+    }
+  ]
+}
