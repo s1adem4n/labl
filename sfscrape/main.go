@@ -24,7 +24,7 @@ type Category struct {
 	Designs   []Design
 }
 
-func fixName(name string) string {
+func fixName(name string, fixSpelling bool) string {
 	ext := filepath.Ext(name)
 	name = strings.TrimSuffix(name, ext)
 
@@ -33,8 +33,20 @@ func fixName(name string) string {
 		"ae", "ä",
 		"oe", "ö",
 		"_", " ",
+		"-", " ",
 	)
 	name = replacer.Replace(name)
+
+	if fixSpelling {
+		replacer = strings.NewReplacer(
+			"Weihnachten", "",
+			"Dekor", "",
+			"Deko", "",
+			"Schmetterlin", "Schmetterling",
+			"Oster Icons", "Oster Icon",
+		)
+		name = replacer.Replace(name)
+	}
 
 	// now remove all numbers
 	replacer = strings.NewReplacer(
@@ -60,7 +72,7 @@ func fixNames(names []string) []string {
 	fixedNames := make([]string, len(names))
 
 	for i, name := range names {
-		name = fixName(name)
+		name = fixName(name, true)
 
 		count := nameCount[name]
 		if count > 0 {
@@ -94,7 +106,7 @@ func main() {
 	for _, category := range categories {
 		<-ticker.C
 
-		title := fixName(category.Title)
+		title := fixName(category.Title, false)
 		err := os.MkdirAll("output/"+title, 0755)
 		if err != nil {
 			slog.Error("can't create category directory", "err", err)
