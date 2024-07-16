@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"io/fs"
 	"labl/frontend"
 	_ "labl/migrations"
 	"labl/pkg/render"
@@ -14,7 +15,6 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
-	"regexp"
 	"strings"
 
 	"github.com/go-pdf/fpdf"
@@ -63,36 +63,23 @@ type ErrorResponse struct {
 	Data    any    `json:"data"`
 }
 
-func addImages(dao *daos.Dao, fs *filesystem.System, logger *slog.Logger) error {
-	images, err := os.ReadDir("images")
-	if err != nil {
-		if os.IsNotExist(err) {
+func addImages(dao *daos.Dao, appFS *filesystem.System, logger *slog.Logger) error {
+	if _, err := os.Stat("images"); os.IsNotExist(err) {
+		return nil
+	}
+
+	err := filepath.WalkDir("images", func(path string, d fs.DirEntry, err error) error {
+		if d.IsDir() || err != nil {
+			return err
+		}
+		ext := filepath.Ext(path)
+		if ext != ".jpg" && ext != ".png" {
+			logger.Info("Invalid image file extension, skipping", "file", path)
 			return nil
 		}
-		return err
-	}
-	re := regexp.MustCompile(`^(.+)_(.+)\.(.+)$`)
-
-	// filename format is <name>_<tag>.<ext>
-	// ext must be either jpg or png
-	for _, file := range images {
-		if file.IsDir() {
-			continue
-		}
-		fileName := file.Name()
-
-		var name, tag, ext string
-		match := re.FindStringSubmatch(fileName)
-		if len(match) != 4 {
-			return fmt.Errorf("invalid filename: %s", fileName)
-		} else {
-			name, tag, ext = match[1], match[2], match[3]
-		}
-
-		if ext != "jpg" && ext != "png" {
-			logger.Info("Invalid image file extension, skipping", "file", fileName)
-			continue
-		}
+		fileName := d.Name()
+		name := strings.TrimSuffix(fileName, ext)
+		tag := filepath.Base(filepath.Dir(path))
 
 		foundRecord, _ := dao.FindFirstRecordByFilter("images", "name = {:name} && tag = {:tag}", dbx.Params{"name": name, "tag": tag})
 
@@ -107,7 +94,7 @@ func addImages(dao *daos.Dao, fs *filesystem.System, logger *slog.Logger) error 
 
 			// delete the old file
 			oldFileKey := foundRecord.BaseFilesPath() + "/" + foundRecord.GetString("image")
-			if err := fs.Delete(oldFileKey); err != nil {
+			if err := appFS.Delete(oldFileKey); err != nil {
 				return err
 			}
 		} else {
@@ -116,7 +103,7 @@ func addImages(dao *daos.Dao, fs *filesystem.System, logger *slog.Logger) error 
 		record.Set("name", name)
 		record.Set("tag", tag)
 
-		file, err := os.Open("images/" + fileName)
+		file, err := os.Open(path)
 		if err != nil {
 			return err
 		}
@@ -137,17 +124,19 @@ func addImages(dao *daos.Dao, fs *filesystem.System, logger *slog.Logger) error 
 		// upload the file
 		fileKey := record.BaseFilesPath() + "/" + recordFile.Name
 
-		if err := fs.UploadFile(recordFile, fileKey); err != nil {
+		if err := appFS.UploadFile(recordFile, fileKey); err != nil {
 			return err
 		}
 
 		if err := dao.SaveRecord(record); err != nil {
-			fs.Delete(fileKey)
+			appFS.Delete(fileKey)
 			return err
 		}
-	}
 
-	return nil
+		return nil
+	})
+
+	return err
 }
 
 func addTemplates(dao *daos.Dao, logger *slog.Logger) error {
