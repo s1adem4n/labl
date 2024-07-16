@@ -32,6 +32,8 @@
 			}
 		});
 
+		tags.sort((a, b) => a.localeCompare(b));
+
 		return tags;
 	});
 
@@ -112,7 +114,7 @@
 								src={pb.files.getUrl(image, image.image, { thumb: '300x300f' })}
 							/>
 						</div>
-						<span class="text-ellipsis overflow-hidden text-nowrap">
+						<span class="text-ellipsis overflow-hidden text-nowrap text-center">
 							{image.name}
 						</span>
 						<button
