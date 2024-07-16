@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"labl/frontend"
+	_ "labl/migrations"
 	"labl/pkg/render"
 	"labl/pkg/templates"
 	"log"
