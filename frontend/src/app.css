@@ -10,3 +10,7 @@ body,
 button:hover {
 	cursor: pointer;
 }
+
+@theme {
+	--breakpoint-xs: 420px;
+}

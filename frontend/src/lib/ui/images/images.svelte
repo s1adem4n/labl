@@ -72,7 +72,7 @@
 	}}
 	class="backdrop:bg-white/50 m-auto max-w-3xl bg-transparent p-4"
 >
-	<div class="flex h-[600px] rounded-xl border border-gray-200 bg-white">
+	<div class="flex h-[calc(100dvh-8rem)] rounded-xl border border-gray-200 bg-white">
 		<div class="flex flex-col border-r border-gray-200 min-w-[30%] p-4 gap-2">
 			<span class="text-xl font-bold -mt-2">Bilder</span>
 			{#each tags as tag}
@@ -95,7 +95,10 @@
 				bind:value={searchFilter}
 				placeholder="Suchen ..."
 			/>
-			<div class="grid grid-cols-3 w-full p-2 gap-2 overflow-auto" bind:this={scrollContainer}>
+			<div
+				class="grid grid-cols-2 xs:grid-cols-3 w-full p-2 gap-2 overflow-auto"
+				bind:this={scrollContainer}
+			>
 				{#if filteredImages.length === 0}
 					<span class="col-span-3 text-center text-gray-400">Keine Bilder gefunden</span>
 				{/if}
@@ -109,7 +112,7 @@
 								src={pb.files.getUrl(image, image.image, { thumb: '300x300f' })}
 							/>
 						</div>
-						<span class="text-ellipsis overflow-hidden">
+						<span class="text-ellipsis overflow-hidden text-nowrap">
 							{image.name}
 						</span>
 						<button
