@@ -1,8 +1,6 @@
 <script lang="ts">
 	import type { RenderRequest } from '$lib/pb';
-	import Checkbox from '$lib/ui/checkbox.svelte';
-	import Input from '$lib/ui/input.svelte';
-	import Label from '$lib/ui/label.svelte';
+	import { Checkbox, Input, Label } from '$lib/ui';
 
 	let {
 		request = $bindable()

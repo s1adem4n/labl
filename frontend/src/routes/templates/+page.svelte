@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { renderTemplate, type RenderRequest, type Template } from '$lib/pb';
 	import { templates } from '$lib/state.svelte';
-	import Button from '$lib/ui/button.svelte';
+	import { Button } from '$lib/ui';
 	import Inputs from './inputs.svelte';
 	import Options from './options.svelte';
 
