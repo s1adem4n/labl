@@ -1,8 +1,10 @@
 <script lang="ts">
+	import Trash from '~icons/lucide/trash';
 	import type { Image } from '$lib/pb';
 	import pb from '$lib/pb';
 	import { images } from '$lib/state.svelte';
 	import { shouldCloseDialog } from '$lib/utils';
+	import ImagesSearch from './images-search.svelte';
 
 	let {
 		open = $bindable(),
@@ -60,6 +62,8 @@
 	});
 
 	let scrollContainer: HTMLDivElement;
+
+	let searchOpen = $state(false);
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->
@@ -74,12 +78,12 @@
 			open = false;
 		}
 	}}
-	class="backdrop:bg-white/50 m-auto max-w-3xl bg-transparent p-4"
+	class="m-auto h-[90dvh] w-full max-w-3xl bg-transparent backdrop:bg-white/50"
 >
-	<div class="flex h-[calc(100dvh-8rem)] rounded-xl border border-gray-200 bg-white">
-		<div class="flex flex-col border-r border-gray-200 p-4 gap-2 xs:min-w-48">
-			<span class="text-xl font-bold -mt-2">Bilder</span>
-			<div class="flex flex-col gap-3 overflow-scroll">
+	<div class="flex h-full w-full rounded-xl border border-gray-200 bg-white">
+		<div class="xs:min-w-48 flex flex-col gap-2 border-r border-gray-200 p-4">
+			<span class="-mt-2 text-xl font-bold">Bilder</span>
+			<div class="flex h-full flex-col gap-3 overflow-scroll">
 				{#each tags as tag}
 					<button
 						class="text-left leading-snug"
@@ -93,16 +97,25 @@
 						{tag === '' ? 'Alle' : tag}
 					</button>
 				{/each}
+				<button
+					class="mt-auto rounded-md font-bold text-blue-500 hover:underline"
+					onclick={() => {
+						searchOpen = !searchOpen;
+					}}
+				>
+					Bilder suchen
+				</button>
+				<ImagesSearch bind:open={searchOpen} />
 			</div>
 		</div>
-		<div class="flex flex-col w-full">
+		<div class="flex w-full flex-col">
 			<input
-				class="focus:outline-none border-t-0 border-x-0 border-b border-gray-200 py-2 px-4 w-full rounded-none"
+				class="w-full rounded-none border-x-0 border-b border-t-0 border-gray-200 px-4 py-2 focus:outline-none"
 				bind:value={searchFilter}
 				placeholder="Suchen ..."
 			/>
 			<div
-				class="grid grid-cols-2 xs:grid-cols-3 w-full p-2 gap-2 overflow-auto"
+				class="xs:grid-cols-3 grid w-full grid-cols-2 gap-2 overflow-auto p-2"
 				bind:this={scrollContainer}
 			>
 				{#if filteredImages.length === 0}
@@ -110,16 +123,24 @@
 				{/if}
 
 				{#each filteredImages as image}
-					<div class="flex flex-col rounded-xl gap-1 p-2 border border-gray-200 h-fit">
-						<div class="w-full h-full aspect-square">
+					<div class="relative flex h-fit flex-col gap-1 rounded-xl border border-gray-200 p-2">
+						<button
+							class="absolute right-2 top-2"
+							onclick={() => {
+								pb.collection('images').delete(image.id);
+							}}
+						>
+							<Trash class="h-4 w-4 text-red-500" />
+						</button>
+						<div class="aspect-square h-full w-full">
 							<img
 								alt={image.name}
 								loading="lazy"
-								class="object-contain w-full h-full"
+								class="h-full w-full object-contain"
 								src={pb.files.getUrl(image, image.image, { thumb: '250x250f' })}
 							/>
 						</div>
-						<span class="text-ellipsis overflow-hidden text-nowrap text-center">
+						<span class="overflow-hidden text-ellipsis text-nowrap text-center">
 							{image.name}
 						</span>
 						<button

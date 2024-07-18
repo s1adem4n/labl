@@ -1,4 +1,5 @@
 import PocketBase, { RecordService } from 'pocketbase';
+import type { SearchResponse } from './search';
 
 export const baseUrl = import.meta.env.DEV
 	? `http://${window.location.hostname}:8090`
@@ -93,4 +94,15 @@ export const renderTemplate = async (request: RenderRequest) => {
 	});
 
 	return res.blob();
+};
+
+export const searchImages = async (query: string, transparent = true, start = 1) => {
+	const params = new URLSearchParams({
+		q: query,
+		start: start.toString(),
+		transparent: transparent.toString()
+	});
+	const res = await pb.send(`/search?${params.toString()}`, {});
+
+	return res as SearchResponse;
 };

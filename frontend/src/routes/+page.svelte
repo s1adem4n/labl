@@ -7,15 +7,15 @@
 
 <h1 class="text-2xl font-bold">Vorlagen</h1>
 
-<div class="grid grid-cols-2 sm:grid-cols-3 w-full gap-2">
+<div class="grid w-full grid-cols-2 gap-2 sm:grid-cols-3">
 	{#each templates as template}
 		<button
 			onclick={() => goto(`${base}/templates?id=${template.id}`)}
-			class="flex flex-col p-2 border border-gray-200 rounded-xl gap-2 group"
+			class="group flex flex-col gap-2 rounded-xl border border-gray-200 p-2"
 		>
-			<div class="flex w-full aspect-square relative rounded-md overflow-hidden">
+			<div class="relative flex aspect-square w-full overflow-hidden rounded-md">
 				<img
-					class="object-contain w-full h-full text-transparent"
+					class="h-full w-full object-contain text-transparent"
 					src={pb.files.getUrl(template, template.thumbnail, { thumb: '250x250f' })}
 					alt={template.name}
 				/>
@@ -25,8 +25,8 @@
 					</div>
 				{/if}
 			</div>
-			<span class="w-full h-px bg-gray-200"></span>
-			<span class="font-bold mx-auto text-center group-hover:underline">
+			<span class="h-px w-full bg-gray-200"></span>
+			<span class="mx-auto text-center font-bold group-hover:underline">
 				{template.name}
 			</span>
 		</button>
