@@ -65,8 +65,12 @@
 			const link = document.createElement('a');
 			link.target = '_blank';
 			// if on ios, set download attribute
-			if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-				link.download = 'output.pdf';
+			if (
+				/iPad|iPhone|iPod/.test(navigator.platform) ||
+				(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) ||
+				/iPhone|iPad|iPod/.test(navigator.userAgent)
+			) {
+				link.download = `${template!.name}.pdf`;
 			}
 
 			link.href = URL.createObjectURL(blob);
