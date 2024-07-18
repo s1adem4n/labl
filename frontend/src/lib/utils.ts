@@ -3,6 +3,8 @@ export const shouldCloseDialog = (
 		currentTarget: HTMLElement;
 	}
 ) => {
+	e.stopPropagation();
+
 	if (
 		e.currentTarget.tagName !== 'DIALOG' ||
 		(e.target instanceof HTMLElement && e.target.tagName !== 'DIALOG')

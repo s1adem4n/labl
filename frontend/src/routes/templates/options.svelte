@@ -41,7 +41,7 @@
 			placeholder="Breite"
 			disabled={request.size.height !== 0}
 		/>
-		<span class="text-xl -mt-1">x</span>
+		<span class="-mt-1 text-xl">x</span>
 		<Input
 			type="number"
 			bind:value={request.size.height}
@@ -63,7 +63,7 @@
 	<Label for="margin">Abstand (Rand)</Label>
 	<Input bind:value={request.margin} id="margin" type="number" />
 </div>
-<div class="flex gap-2 items-center">
+<div class="flex items-center gap-2">
 	<Checkbox bind:value={request.outline} id="outline" />
 	<Label for="outline">Umrandung</Label>
 </div>

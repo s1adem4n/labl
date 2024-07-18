@@ -8,15 +8,18 @@ import (
 	"labl/frontend"
 	_ "labl/migrations"
 	"labl/pkg/render"
+	"labl/pkg/search"
 	"labl/pkg/templates"
 	"log"
 	"log/slog"
 	"net/http"
 	"os"
 	"path/filepath"
+	"strconv"
 	"strings"
 
 	"github.com/go-pdf/fpdf"
+	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
 	"github.com/pocketbase/dbx"
@@ -54,6 +57,12 @@ type RenderRequest struct {
 	} `json:"size"`
 	Inputs  render.Inputs `json:"inputs"`
 	Outline bool          `json:"outline"`
+}
+
+type ImagesRequest struct {
+	Name string `json:"name"`
+	Tag  string `json:"tag"`
+	URL  string `json:"url"`
 }
 
 type ErrorResponse struct {
@@ -246,6 +255,10 @@ func addTemplates(dao *daos.Dao, fs *filesystem.System, logger *slog.Logger) err
 }
 
 func main() {
+	if err := godotenv.Load(); err != nil {
+		slog.Error("Failed to load .env file", "error", err)
+	}
+
 	app := pocketbase.New()
 
 	isGoRun := strings.HasPrefix(os.Args[0], os.TempDir())
@@ -255,6 +268,18 @@ func main() {
 		// (the isGoRun check is to enable it only during development)
 		Automigrate: isGoRun,
 	})
+
+	searchEnabled := false
+	googleSearchKey := os.Getenv("GOOGLE_SEARCH_KEY")
+	googleSearchEngineID := os.Getenv("GOOGLE_SEARCH_ENGINE_ID")
+	if googleSearchKey == "" || googleSearchEngineID == "" {
+		slog.Error("image search credentials not found, search functionality will be disabled")
+	} else {
+		slog.Info("image search credentials found, search functionality will be enabled", "key", googleSearchKey, "engine_id", googleSearchEngineID)
+		searchEnabled = true
+	}
+
+	searcher := search.NewSearcher(googleSearchKey, googleSearchEngineID)
 
 	app.OnBeforeServe().Add(func(e *core.ServeEvent) error {
 		router := e.Router
@@ -364,6 +389,80 @@ func main() {
 			}
 
 			return c.Blob(200, "application/pdf", pdfData.Bytes())
+		})
+
+		router.GET("/search", func(c echo.Context) error {
+			if !searchEnabled {
+				return c.JSON(400, ErrorResponse{400, "Search functionality is disabled", nil})
+			}
+
+			query := c.QueryParam("q")
+			if query == "" {
+				return c.JSON(400, ErrorResponse{400, "Query parameter is required", nil})
+			}
+			transparent := c.QueryParam("transparent") == "true"
+			start, err := strconv.Atoi(c.QueryParam("start"))
+			if err != nil {
+				start = 1
+			}
+
+			var resp *search.SearchResponse
+
+			resp, err = searcher.SearchImages(query, start, transparent)
+			if err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to search images", err})
+			}
+
+			return c.JSON(200, resp)
+		})
+
+		router.POST("/images", func(c echo.Context) error {
+			var req ImagesRequest
+			if err := c.Bind(&req); err != nil {
+				return c.JSON(400, ErrorResponse{400, "Failed to bind request", err})
+			}
+
+			if req.Name == "" || req.Tag == "" || req.URL == "" {
+				return c.JSON(400, ErrorResponse{400, "Name, tag and URL are required", nil})
+			}
+
+			collection, err := dao.FindCollectionByNameOrId("images")
+			if err != nil {
+				return c.JSON(500, ErrorResponse{500, "internal error", err})
+			}
+			record := models.NewRecord(collection)
+			record.RefreshId()
+			record.Set("name", req.Name)
+			record.Set("tag", req.Tag)
+
+			resp, err := http.Get(req.URL)
+			if err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to fetch image", err})
+			}
+			defer resp.Body.Close()
+
+			ext := filepath.Ext(req.URL)
+
+			data, err := io.ReadAll(resp.Body)
+			if err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to read image data", err})
+			}
+			file, err := filesystem.NewFileFromBytes(data, req.Name+ext)
+			if err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to create file", err})
+			}
+			key := record.BaseFilesPath() + "/" + file.Name
+			if err := fs.UploadFile(file, key); err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to upload file", err})
+			}
+
+			record.Set("image", file.Name)
+
+			if err := dao.SaveRecord(record); err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to save record", err})
+			}
+
+			return c.JSON(200, record)
 		})
 
 		return nil

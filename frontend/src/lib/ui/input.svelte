@@ -23,7 +23,7 @@
 </script>
 
 <input
-	class="w-full rounded-xl border border-gray-200 px-4 py-2 shadow-sm focus-visible:border-blue-500 focus-visible:outline-none appearance-none disabled:cursor-not-allowed disabled:opacity-50"
+	class="w-full appearance-none rounded-xl border border-gray-200 py-2 px-4 shadow-sm focus-visible:border-blue-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
 	{placeholder}
 	{id}
 	{type}
