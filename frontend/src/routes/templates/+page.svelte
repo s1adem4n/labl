@@ -23,7 +23,7 @@
 		margin: 10,
 		quantity: 15,
 		size: {
-			width: 100,
+			width: 80,
 			height: 0
 		},
 		outline: false
@@ -46,7 +46,7 @@
 	</div>
 	<div class="flex flex-col gap-2">
 		<span class="text-xl"> Optionen </span>
-		<Options bind:request />
+		<Options bind:request {template} />
 	</div>
 
 	<Button
@@ -60,12 +60,17 @@
 				id: template!.id
 			});
 
-			const url = URL.createObjectURL(new Blob([res], { type: 'application/pdf' }));
+			const blob = new Blob([res], { type: 'application/pdf' });
 
-			const a = document.createElement('a');
-			a.href = url;
-			a.target = '_blank';
-			a.click();
+			const link = document.createElement('a');
+			link.target = '_blank';
+			// if on ios, set download attribute
+			if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+				link.download = 'output.pdf';
+			}
+
+			link.href = URL.createObjectURL(blob);
+			link.click();
 		}}>Erstellen</Button
 	>
 {:else}

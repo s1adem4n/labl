@@ -17,8 +17,10 @@
 	let dialog: HTMLDialogElement;
 	$effect(() => {
 		if (open) {
+			document.body.style.overflow = 'hidden';
 			dialog.showModal();
 		} else {
+			document.body.style.overflow = '';
 			dialog.close();
 		}
 	});
@@ -75,21 +77,23 @@
 	class="backdrop:bg-white/50 m-auto max-w-3xl bg-transparent p-4"
 >
 	<div class="flex h-[calc(100dvh-8rem)] rounded-xl border border-gray-200 bg-white">
-		<div class="flex flex-col border-r border-gray-200 min-w-[30%] p-4 gap-2">
+		<div class="flex flex-col border-r border-gray-200 p-4 gap-2 xs:min-w-48">
 			<span class="text-xl font-bold -mt-2">Bilder</span>
-			{#each tags as tag}
-				<button
-					class="text-left rounded-xl"
-					class:font-bold={tag === tagFilter}
-					class:underline={tag === tagFilter}
-					onclick={() => {
-						tagFilter = tag;
-						scrollContainer.scrollTo({ top: 0 });
-					}}
-				>
-					{tag === '' ? 'Alle' : tag}
-				</button>
-			{/each}
+			<div class="flex flex-col gap-3 overflow-scroll">
+				{#each tags as tag}
+					<button
+						class="text-left rounded-xl leading-snug"
+						class:font-bold={tag === tagFilter}
+						class:underline={tag === tagFilter}
+						onclick={() => {
+							tagFilter = tag;
+							scrollContainer.scrollTo({ top: 0 });
+						}}
+					>
+						{tag === '' ? 'Alle' : tag}
+					</button>
+				{/each}
+			</div>
 		</div>
 		<div class="flex flex-col w-full">
 			<input
@@ -110,6 +114,7 @@
 						<div class="w-full h-full aspect-square">
 							<img
 								alt={image.name}
+								loading="lazy"
 								class="object-contain w-full h-full"
 								src={pb.files.getUrl(image, image.image, { thumb: '300x300f' })}
 							/>

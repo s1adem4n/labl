@@ -3,7 +3,6 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
 	"io"
 	"io/fs"
 	"labl/frontend"
@@ -114,7 +113,7 @@ func addImages(dao *daos.Dao, appFS *filesystem.System, logger *slog.Logger) err
 		}
 
 		// generate file metadata
-		recordFile, err := filesystem.NewFileFromBytes(data, fmt.Sprintf("%s.%s", name, ext))
+		recordFile, err := filesystem.NewFileFromBytes(data, name+ext)
 		if err != nil {
 			return err
 		}
@@ -139,7 +138,7 @@ func addImages(dao *daos.Dao, appFS *filesystem.System, logger *slog.Logger) err
 	return err
 }
 
-func addTemplates(dao *daos.Dao, logger *slog.Logger) error {
+func addTemplates(dao *daos.Dao, fs *filesystem.System, logger *slog.Logger) error {
 	templatesDir, err := os.ReadDir("templates")
 	if err != nil {
 		if os.IsNotExist(err) {
@@ -187,11 +186,56 @@ func addTemplates(dao *daos.Dao, logger *slog.Logger) error {
 		if foundRecord != nil {
 			record.MarkAsNotNew()
 			record.SetId(foundRecord.Id)
+
+			if foundRecord.GetString("thumbnail") != "" {
+				// delete the old thumbnail
+				oldThumbnailKey := foundRecord.BaseFilesPath() + "/" + foundRecord.GetString("thumbnail")
+				if err := fs.Delete(oldThumbnailKey); err != nil {
+					return err
+				}
+			}
 		} else {
 			record.RefreshId()
 		}
 		record.Set("name", name)
 		record.Set("data", encoded)
+
+		// check if file with same name but jpg or png extension exists
+		name = strings.TrimSuffix(fileName, ".json")
+		var thumbnailPath string
+		if _, err := os.Stat("templates/" + name + ".jpg"); err == nil {
+			thumbnailPath = name + ".jpg"
+		} else if _, err := os.Stat("templates/" + name + ".png"); err == nil {
+			thumbnailPath = name + ".png"
+		}
+
+		if thumbnailPath != "" {
+			thumbnail, err := os.Open("templates/" + thumbnailPath)
+			if err != nil {
+				logger.Error("Failed to open thumbnail file", "error", err)
+				return err
+			}
+			defer thumbnail.Close()
+
+			thumbnailData, err := io.ReadAll(thumbnail)
+			if err != nil {
+				logger.Error("Failed to read thumbnail file", "error", err)
+				return err
+			}
+
+			thumbnailFile, err := filesystem.NewFileFromBytes(thumbnailData, filepath.Base(thumbnailPath))
+			if err != nil {
+				return err
+			}
+			key := record.BaseFilesPath() + "/" + thumbnailFile.Name
+			if err := fs.UploadFile(thumbnailFile, key); err != nil {
+				return err
+			}
+
+			record.Set("thumbnail", thumbnailFile.Name)
+		} else {
+			logger.Warn("Thumbnail not found for template", "name", name)
+		}
 
 		if err := dao.SaveRecord(record); err != nil {
 			return err
@@ -225,7 +269,7 @@ func main() {
 		if err != nil {
 			return err
 		}
-		err = addTemplates(dao, logger)
+		err = addTemplates(dao, fs, logger)
 		if err != nil {
 			return err
 		}

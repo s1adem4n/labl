@@ -1,6 +1,8 @@
 import PocketBase, { RecordService } from 'pocketbase';
 
-export const baseUrl = import.meta.env.DEV ? 'http://localhost:8090' : window.location.origin;
+export const baseUrl = import.meta.env.DEV
+	? `http://${window.location.hostname}:8090`
+	: window.location.origin;
 
 export interface Base {
 	id: string;
@@ -48,6 +50,7 @@ export interface TemplateData {
 
 export interface Template extends Base {
 	name: string;
+	thumbnail: string;
 	data: TemplateData;
 }
 
