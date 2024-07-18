@@ -35,6 +35,6 @@
 	});
 </script>
 
-<div class="flex flex-col h-full w-full max-w-xl mx-auto p-4 gap-4 overflow-y-auto">
+<div class="flex flex-col h-full w-full max-w-2xl mx-auto p-4 gap-4 overflow-y-auto">
 	{@render children()}
 </div>

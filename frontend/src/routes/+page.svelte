@@ -7,7 +7,7 @@
 
 <h1 class="text-2xl font-bold">Vorlagen</h1>
 
-<div class="grid grid-cols-2 w-full gap-2">
+<div class="grid grid-cols-2 sm:grid-cols-3 w-full gap-2">
 	{#each templates as template}
 		<button
 			onclick={() => goto(`${base}/templates?id=${template.id}`)}

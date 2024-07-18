@@ -82,7 +82,7 @@
 			<div class="flex flex-col gap-3 overflow-scroll">
 				{#each tags as tag}
 					<button
-						class="text-left rounded-xl leading-snug"
+						class="text-left leading-snug"
 						class:font-bold={tag === tagFilter}
 						class:underline={tag === tagFilter}
 						onclick={() => {
@@ -97,7 +97,7 @@
 		</div>
 		<div class="flex flex-col w-full">
 			<input
-				class="focus:outline-none border-t-0 border-x-0 border-b border-gray-200 py-2 px-4 w-full"
+				class="focus:outline-none border-t-0 border-x-0 border-b border-gray-200 py-2 px-4 w-full rounded-none"
 				bind:value={searchFilter}
 				placeholder="Suchen ..."
 			/>
