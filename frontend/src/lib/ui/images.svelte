@@ -116,7 +116,7 @@
 								alt={image.name}
 								loading="lazy"
 								class="object-contain w-full h-full"
-								src={pb.files.getUrl(image, image.image, { thumb: '300x300f' })}
+								src={pb.files.getUrl(image, image.image, { thumb: '250x250f' })}
 							/>
 						</div>
 						<span class="text-ellipsis overflow-hidden text-nowrap text-center">

@@ -16,7 +16,7 @@
 			<div class="flex w-full aspect-square relative">
 				<img
 					class="object-contain w-full h-full text-transparent"
-					src={pb.files.getUrl(template, template.thumbnail, { thumb: '300x300f' })}
+					src={pb.files.getUrl(template, template.thumbnail, { thumb: '250x250f' })}
 					alt={template.name}
 				/>
 				{#if !template.thumbnail}
