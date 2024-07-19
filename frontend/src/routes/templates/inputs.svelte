@@ -1,7 +1,8 @@
 <script lang="ts">
 	import { type Template } from '$lib/pb';
 	import { images } from '$lib/state.svelte';
-	import { Images, Label, Input } from '$lib/ui';
+	import { Label, Input } from '$lib/ui';
+	import Images from '$lib/components/images.svelte';
 
 	let {
 		template,

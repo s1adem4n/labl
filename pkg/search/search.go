@@ -98,12 +98,14 @@ func (s *Searcher) SearchImages(query string, start int, transparent bool) (*Sea
 	q.Set("key", s.Key)
 	q.Set("cx", s.EngineID)
 	q.Set("q", query)
+	q.Set("filter", "1")
 	q.Set("searchType", "image")
 	q.Set("start", fmt.Sprintf("%d", start))
 	q.Set("num", "10")
 	if transparent {
 		q.Set("imgColorType", "trans")
-		q.Set("q", query+" transparent png")
+		q.Set("fileType", "png")
+		q.Set("q", query)
 	}
 
 	u.RawQuery = q.Encode()

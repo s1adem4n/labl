@@ -1,9 +1,9 @@
 <script lang="ts">
+	import { Dialog, Image as ImageDisplay } from '$lib/ui';
 	import Trash from '~icons/lucide/trash';
 	import type { Image } from '$lib/pb';
 	import pb from '$lib/pb';
 	import { images } from '$lib/state.svelte';
-	import { shouldCloseDialog } from '$lib/utils';
 	import ImagesSearch from './images-search.svelte';
 
 	let {
@@ -15,17 +15,6 @@
 		select?: boolean;
 		value?: string;
 	} = $props();
-
-	let dialog: HTMLDialogElement;
-	$effect(() => {
-		if (open) {
-			document.body.style.overflow = 'hidden';
-			dialog.showModal();
-		} else {
-			document.body.style.overflow = '';
-			dialog.close();
-		}
-	});
 
 	const tags = $derived.by(() => {
 		const tags: string[] = [''];
@@ -66,21 +55,8 @@
 	let searchOpen = $state(false);
 </script>
 
-<!-- svelte-ignore a11y_click_events_have_key_events -->
-<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-<dialog
-	bind:this={dialog}
-	onclose={() => {
-		open = false;
-	}}
-	onclick={(e) => {
-		if (shouldCloseDialog(e)) {
-			open = false;
-		}
-	}}
-	class="m-auto h-[90dvh] w-full max-w-3xl bg-transparent backdrop:bg-white/50"
->
-	<div class="flex h-full w-full rounded-xl border border-gray-200 bg-white">
+<Dialog bind:open size="lg">
+	<div class="flex h-full w-full">
 		<div class="xs:min-w-48 flex flex-col gap-2 border-r border-gray-200 p-4">
 			<span class="-mt-2 text-xl font-bold">Bilder</span>
 			<div class="flex h-full flex-col gap-3 overflow-scroll">
@@ -125,7 +101,7 @@
 				{#each filteredImages as image}
 					<div class="relative flex h-fit flex-col gap-1 rounded-xl border border-gray-200 p-2">
 						<button
-							class="absolute right-2 top-2"
+							class="absolute right-2 top-2 z-20"
 							onclick={() => {
 								pb.collection('images').delete(image.id);
 							}}
@@ -133,10 +109,8 @@
 							<Trash class="h-4 w-4 text-red-500" />
 						</button>
 						<div class="aspect-square h-full w-full">
-							<img
+							<ImageDisplay
 								alt={image.name}
-								loading="lazy"
-								class="h-full w-full object-contain"
 								src={pb.files.getUrl(image, image.image, { thumb: '250x250f' })}
 							/>
 						</div>
@@ -159,4 +133,4 @@
 			</div>
 		</div>
 	</div>
-</dialog>
+</Dialog>
