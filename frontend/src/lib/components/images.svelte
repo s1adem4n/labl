@@ -91,7 +91,7 @@
 				placeholder="Suchen ..."
 			/>
 			<div
-				class="xs:grid-cols-3 grid w-full grid-cols-2 gap-2 overflow-auto p-2"
+				class="xs:grid-cols-2 grid w-full grid-cols-1 gap-2 overflow-auto p-2 sm:grid-cols-3"
 				bind:this={scrollContainer}
 			>
 				{#if filteredImages.length === 0}
@@ -120,7 +120,9 @@
 							{image.name}
 						</span>
 						{#if tagFilter === ''}
-							<span class="-my-1 text-center text-sm text-gray-400">
+							<span
+								class="-my-1 overflow-hidden text-ellipsis text-nowrap text-center text-sm text-gray-400"
+							>
 								{image.tag}
 							</span>
 						{/if}
