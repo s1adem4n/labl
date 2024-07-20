@@ -117,6 +117,11 @@
 						<span class="overflow-hidden text-ellipsis text-nowrap text-center">
 							{image.name}
 						</span>
+						{#if tagFilter === ''}
+							<span class="-my-1 text-center text-sm text-gray-400">
+								{image.tag}
+							</span>
+						{/if}
 						<button
 							class="text-sm text-blue-500 underline"
 							onclick={() => {
