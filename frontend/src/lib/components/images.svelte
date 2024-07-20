@@ -101,7 +101,7 @@
 				{#each filteredImages as image}
 					<div class="relative flex h-fit flex-col gap-1 rounded-xl border border-gray-200 p-2">
 						<button
-							class="absolute right-2 top-2 z-20"
+							class="absolute bottom-2 right-2 z-20"
 							onclick={() => {
 								pb.collection('images').delete(image.id);
 							}}

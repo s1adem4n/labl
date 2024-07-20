@@ -312,7 +312,7 @@ func main() {
 		router.POST("/render", func(c echo.Context) error {
 			var req RenderRequest
 			if err := c.Bind(&req); err != nil {
-				return err
+				return c.JSON(400, ErrorResponse{400, "Failed to bind request", err.Error()})
 			}
 
 			templateRecord, err := dao.FindRecordById("templates", req.ID)
@@ -324,7 +324,7 @@ func main() {
 			var template templates.Template
 			if err := json.Unmarshal([]byte(templateData), &template); err != nil {
 				logger.Error("Failed to unmarshal template", "error", err)
-				return c.JSON(500, ErrorResponse{500, "Failed to unmarshal template", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to unmarshal template", err.Error()})
 			}
 
 			for name, resource := range template.Resources {
@@ -378,14 +378,14 @@ func main() {
 
 			err = renderer.Render()
 			if err != nil {
-				return c.JSON(500, ErrorResponse{500, "Failed to render template", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to render template", err.Error()})
 			}
 
 			var pdfData bytes.Buffer
 			err = pdf.Output(&pdfData)
 			if err != nil {
 				logger.Error("Failed to output PDF", "error", err)
-				return c.JSON(500, ErrorResponse{500, "Failed to output PDF", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to output PDF", err.Error()})
 			}
 
 			return c.Blob(200, "application/pdf", pdfData.Bytes())
@@ -419,7 +419,7 @@ func main() {
 		router.POST("/images", func(c echo.Context) error {
 			var req ImagesRequest
 			if err := c.Bind(&req); err != nil {
-				return c.JSON(400, ErrorResponse{400, "Failed to bind request", err})
+				return c.JSON(400, ErrorResponse{400, "Failed to bind request", err.Error()})
 			}
 
 			if req.Name == "" || req.Tag == "" || req.URL == "" {
@@ -445,21 +445,21 @@ func main() {
 
 			data, err := io.ReadAll(resp.Body)
 			if err != nil {
-				return c.JSON(500, ErrorResponse{500, "Failed to read image data", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to read image data", err.Error()})
 			}
 			file, err := filesystem.NewFileFromBytes(data, req.Name+ext)
 			if err != nil {
-				return c.JSON(500, ErrorResponse{500, "Failed to create file", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to create file", err.Error()})
 			}
 			key := record.BaseFilesPath() + "/" + file.Name
 			if err := fs.UploadFile(file, key); err != nil {
-				return c.JSON(500, ErrorResponse{500, "Failed to upload file", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to upload file", err.Error()})
 			}
 
 			record.Set("image", file.Name)
 
 			if err := dao.SaveRecord(record); err != nil {
-				return c.JSON(500, ErrorResponse{500, "Failed to save record", err})
+				return c.JSON(500, ErrorResponse{500, "Failed to save record", err.Error()})
 			}
 
 			return c.JSON(200, record)

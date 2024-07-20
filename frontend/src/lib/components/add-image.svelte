@@ -9,17 +9,21 @@
 		open?: boolean;
 		url?: string;
 	} = $props();
+
+	let image: HTMLImageElement | null = $state(null);
+
 	let name = $state('');
 	let tag = $state('');
+	let urlInput = $state('');
 </script>
 
 <Dialog bind:open title="Bild hinzufügen">
 	<div class="flex h-full flex-col items-center gap-2 overflow-y-auto p-2">
-		<img class="w-full max-w-xs" src={url} alt="Vorschau" />
+		<img class="w-full max-w-xs" src={url || urlInput} alt="Vorschau" bind:this={image} />
 		{#if !url}
 			<div class="flex w-full flex-col">
 				<Label for="url">URL (Link)</Label>
-				<Input bind:value={url} id="url" />
+				<Input bind:value={urlInput} id="url" />
 			</div>
 		{/if}
 		<div class="flex w-full flex-col">
@@ -32,14 +36,14 @@
 		</div>
 		<Button
 			onclick={async () => {
-				if (!url) return;
+				if (!url && image?.naturalWidth !== 0) return;
 
 				await pb.send('/images', {
 					method: 'POST',
 					body: JSON.stringify({
 						name,
 						tag,
-						url
+						url: url || urlInput
 					})
 				});
 				open = false;

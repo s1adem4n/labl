@@ -8,13 +8,6 @@
         "value": "Domine-Regular.ttf"
       }
     },
-    "background": {
-      "type": "image",
-      "source": {
-        "type": "embed",
-        "value": "background.png"
-      }
-    },
     "title": {
       "type": "text",
       "label": "Titel",
@@ -66,7 +59,7 @@
       },
       "options": {
         "center": true,
-        "color": [255, 255, 255],
+        "color": [0, 0, 0],
         "font": {
           "name": "domine"
         }
@@ -85,7 +78,7 @@
       },
       "options": {
         "center": true,
-        "color": [255, 255, 255]
+        "color": [0, 0, 0]
       }
     }
   ]
