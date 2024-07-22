@@ -101,6 +101,7 @@ func (s *Searcher) SearchImages(query string, start int, transparent bool) (*Sea
 	q.Set("filter", "1")
 	q.Set("searchType", "image")
 	q.Set("start", fmt.Sprintf("%d", start))
+	q.Set("excludeTerms", "buy kaufen shop store bestellen product produkt logo sale discount angebot preis shopping ecommerce katalog kita kindergarten organisation organization öl oil medicine medizin heilung heilmittel verpackung schule rätsel")
 	q.Set("num", "10")
 	if transparent {
 		q.Set("imgColorType", "trans")
