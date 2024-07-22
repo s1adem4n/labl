@@ -1,0 +1,110 @@
+{
+  "aspectRatio": [16, 9],
+  "resources": {
+    "chancery": {
+      "type": "font",
+      "source": {
+        "type": "embed",
+        "value": "Apple-Chancery.ttf"
+      }
+    },
+    "background": {
+      "type": "image",
+      "source": {
+        "type": "embed",
+        "value": "background_green.png"
+      }
+    },
+    "image": {
+      "type": "image",
+      "label": "Bild",
+      "source": {
+        "type": "input"
+      }
+    },
+    "title": {
+      "type": "text",
+      "label": "Titel",
+      "source": {
+        "type": "input"
+      }
+    },
+    "subtitle": {
+      "type": "text",
+      "label": "Untertitel",
+      "source": {
+        "type": "input"
+      }
+    }
+  },
+  "elements": [
+    {
+      "type": "image",
+      "resource": "background",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 0,
+        "height": 100
+      },
+      "options": {
+        "center": true
+      }
+    },
+    {
+      "type": "image",
+      "resource": "image",
+      "position": {
+        "x": 0,
+        "y": 5
+      },
+      "size": {
+        "width": 0,
+        "height": 55
+      },
+      "options": {
+        "center": true
+      }
+    },
+    {
+      "type": "text",
+      "resource": "title",
+      "position": {
+        "x": 0,
+        "y": 65
+      },
+      "size": {
+        "width": 100,
+        "height": 15
+      },
+      "options": {
+        "center": true,
+        "color": [0, 0, 0],
+        "font": {
+          "name": "chancery"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "resource": "subtitle",
+      "position": {
+        "x": 0,
+        "y": 80
+      },
+      "size": {
+        "width": 100,
+        "height": 10
+      },
+      "options": {
+        "center": true,
+        "color": [0, 0, 0],
+        "font": {
+          "name": "chancery"
+        }
+      }
+    }
+  ]
+}
