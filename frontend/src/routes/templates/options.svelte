@@ -10,44 +10,34 @@
 		template: Template;
 	} = $props();
 
-	let calculatedSize = $derived.by(() => {
-		if (request.size.width === 0) {
-			const aspect = template.data.aspectRatio[1] / template.data.aspectRatio[0];
-			return {
-				width: request.size.height / aspect,
-				height: request.size.height
-			};
-		} else if (request.size.height === 0) {
-			const aspect = template.data.aspectRatio[0] / template.data.aspectRatio[1];
-			return {
-				width: request.size.width,
-				height: request.size.width / aspect
-			};
-		} else {
-			return request.size;
-		}
-	});
+	const round = (num: number) => parseFloat(num.toFixed(1));
 </script>
 
 <div class="flex flex-col">
-	<Label for="size"
-		>Größe ({calculatedSize.width.toFixed(1)}x{calculatedSize.height.toFixed(1)})</Label
-	>
+	<Label for="size">Größe</Label>
 	<div class="flex items-center gap-2">
 		<Input
 			type="number"
 			bind:value={request.size.width}
+			oninput={() => {
+				request.size.height = round(
+					(request.size.width || 0) * (template.data.aspectRatio[1] / template.data.aspectRatio[0])
+				);
+			}}
 			id="width"
 			placeholder="Breite"
-			disabled={request.size.height !== 0}
 		/>
 		<span class="-mt-1 text-xl">x</span>
 		<Input
 			type="number"
 			bind:value={request.size.height}
+			oninput={() => {
+				request.size.width = round(
+					(request.size.height || 0) * (template.data.aspectRatio[0] / template.data.aspectRatio[1])
+				);
+			}}
 			id="height"
 			placeholder="Höhe"
-			disabled={request.size.width !== 0}
 		/>
 	</div>
 </div>

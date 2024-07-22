@@ -13,6 +13,8 @@
 
 		if (foundTemplate) {
 			template = foundTemplate;
+			request.size.height =
+				request.size.width * (template.data.aspectRatio[1] / template.data.aspectRatio[0]);
 		}
 	});
 
@@ -24,7 +26,7 @@
 		quantity: 15,
 		size: {
 			width: 80,
-			height: 0
+			height: 80
 		},
 		outline: false
 	});
@@ -57,6 +59,10 @@
 		onclick={async () => {
 			const res = await renderTemplate({
 				...request,
+				size: {
+					width: request.size.width,
+					height: 0
+				},
 				id: template!.id
 			});
 

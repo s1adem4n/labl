@@ -84,14 +84,14 @@
 				<ImagesSearch bind:open={searchOpen} />
 			</div>
 		</div>
-		<div class="flex w-full flex-col">
+		<div class="flex h-full w-full flex-col">
 			<input
 				class="w-full rounded-none border-x-0 border-b border-t-0 border-gray-200 px-4 py-2 focus:outline-none"
 				bind:value={searchFilter}
 				placeholder="Suchen ..."
 			/>
 			<div
-				class="xs:grid-cols-2 grid w-full grid-cols-1 gap-2 overflow-auto p-2 sm:grid-cols-3"
+				class="xs:grid-cols-2 contain-[size_paint_layout] grid h-full w-full grid-cols-1 gap-2 overflow-auto p-2 sm:grid-cols-3"
 				bind:this={scrollContainer}
 			>
 				{#if filteredImages.length === 0}
