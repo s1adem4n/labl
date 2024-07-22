@@ -19,7 +19,11 @@
 				currentTarget: EventTarget & HTMLInputElement;
 			}
 		) => void;
-		oninput?: () => void;
+		oninput?: (
+			e: Event & {
+				currentTarget: EventTarget & HTMLInputElement;
+			}
+		) => void;
 		disabled?: boolean;
 	} = $props();
 </script>
@@ -35,7 +39,9 @@
 		}
 	}}
 	{onchange}
-	{oninput}
+	oninput={(e) => {
+		oninput?.(e);
+	}}
 	{disabled}
 	bind:value
 />

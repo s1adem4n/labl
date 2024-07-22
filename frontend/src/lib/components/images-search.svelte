@@ -4,6 +4,7 @@
 	import { searchImages } from '$lib/pb';
 	import AddImage from './add-image.svelte';
 	import { Dialog } from '$lib/ui';
+	import AddImageFile from './add-image-file.svelte';
 
 	let {
 		open = $bindable()
@@ -43,6 +44,7 @@
 	};
 
 	let dialogOpen = $state(false);
+	let dialogFileOpen = $state(false);
 	let url = $state('');
 </script>
 
@@ -97,8 +99,12 @@
 			>
 				Manuell hinzufügen?
 			</button>
+			<button class="col-span-full text-blue-500" onclick={() => (dialogFileOpen = true)}
+				>Datei hochladen?</button
+			>
 		{/if}
 	</div>
 
 	<AddImage bind:open={dialogOpen} bind:url />
+	<AddImageFile bind:open={dialogFileOpen} />
 </Dialog>

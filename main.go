@@ -422,6 +422,8 @@ func main() {
 				return c.JSON(400, ErrorResponse{400, "Failed to bind request", err.Error()})
 			}
 
+			logger.Info("downloading image", "url", req.URL)
+
 			if req.Name == "" || req.Tag == "" || req.URL == "" {
 				return c.JSON(400, ErrorResponse{400, "Name, tag and URL are required", nil})
 			}
@@ -435,11 +437,20 @@ func main() {
 			record.Set("name", req.Name)
 			record.Set("tag", req.Tag)
 
-			resp, err := http.Get(req.URL)
+			imageReq, err := http.NewRequest("GET", req.URL, nil)
+			if err != nil {
+				return c.JSON(500, ErrorResponse{500, "Failed to create request", err.Error()})
+			}
+			imageReq.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
+			resp, err := http.DefaultClient.Do(imageReq)
 			if err != nil {
 				return c.JSON(500, ErrorResponse{500, "Failed to fetch image", err})
 			}
 			defer resp.Body.Close()
+
+			if resp.StatusCode < 200 || resp.StatusCode >= 300 {
+				return c.JSON(500, ErrorResponse{500, "Failed to fetch image", "status code: " + strconv.Itoa(resp.StatusCode)})
+			}
 
 			ext := filepath.Ext(req.URL)
 
