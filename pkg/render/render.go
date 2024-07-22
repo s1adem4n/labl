@@ -139,10 +139,6 @@ func (t *TemplateRenderer) Render() error {
 			y = t.Margin
 		}
 
-		if t.Outline {
-			pdf.Rect(x, y, t.Size.Width, t.Size.Height, "D")
-		}
-
 		pos := RenderPosition{
 			X:      x,
 			Y:      y,
@@ -175,6 +171,10 @@ func (t *TemplateRenderer) Render() error {
 				}
 				image.Render(pdf, pos)
 			}
+		}
+
+		if t.Outline {
+			pdf.Rect(x, y, t.Size.Width, t.Size.Height, "D")
 		}
 
 		x += t.Size.Width + t.Gap
