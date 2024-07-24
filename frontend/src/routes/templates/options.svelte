@@ -18,6 +18,7 @@
 	<div class="flex items-center gap-2">
 		<Input
 			type="number"
+			min={1}
 			bind:value={request.size.width}
 			oninput={() => {
 				request.size.height = round(
@@ -30,6 +31,7 @@
 		<span class="-mt-1 text-xl">x</span>
 		<Input
 			type="number"
+			min={1}
 			bind:value={request.size.height}
 			oninput={() => {
 				request.size.width = round(

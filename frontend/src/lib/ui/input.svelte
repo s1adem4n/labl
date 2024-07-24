@@ -7,7 +7,9 @@
 		onenter,
 		onchange,
 		oninput,
-		disabled
+		disabled,
+		min,
+		max
 	}: {
 		value?: unknown;
 		type?: string;
@@ -25,6 +27,8 @@
 			}
 		) => void;
 		disabled?: boolean;
+		min?: number;
+		max?: number;
 	} = $props();
 </script>
 
@@ -43,5 +47,7 @@
 		oninput?.(e);
 	}}
 	{disabled}
+	{min}
+	{max}
 	bind:value
 />

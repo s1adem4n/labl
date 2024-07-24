@@ -15,6 +15,12 @@ button:hover {
 	--breakpoint-xs: 520px;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 .load-wrapper {
 	position: relative;
 	height: 100%;
