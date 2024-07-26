@@ -164,10 +164,12 @@ func (t *TemplateRenderer) Render() error {
 				text.Render(pdf, pos)
 			case templates.ElementTypeImage:
 				image := Image{
-					Name:     e.Resource,
-					Position: e.Position,
-					Center:   e.Options.Center,
-					Size:     e.Size,
+					Name:             e.Resource,
+					Position:         e.Position,
+					CenterVertical:   e.Options.CenterVertical,
+					CenterHorizontal: e.Options.CenterHorizontal,
+					Center:           e.Options.Center,
+					Size:             e.Size,
 				}
 				image.Render(pdf, pos)
 			}
