@@ -14,25 +14,13 @@
 
 	let name = $state('');
 	let tag = $state('');
-	let urlInput = $state('');
 </script>
 
 <Dialog bind:open title="Bild hinzufügen">
 	<div class="flex h-full flex-col items-center gap-2 overflow-y-auto p-2">
 		<div class="aspect-video w-full max-w-md rounded-xl bg-gray-100">
-			<img
-				class="h-full w-full object-contain"
-				src={url || urlInput}
-				alt="Vorschau"
-				bind:this={image}
-			/>
+			<img class="h-full w-full object-contain" src={url} alt="Vorschau" bind:this={image} />
 		</div>
-		{#if !url}
-			<div class="flex w-full flex-col">
-				<Label for="url">URL (Link)</Label>
-				<Input bind:value={urlInput} id="url" />
-			</div>
-		{/if}
 		<div class="flex w-full flex-col">
 			<Label for="name">Name</Label>
 			<Input bind:value={name} id="name" />
@@ -50,7 +38,7 @@
 					body: JSON.stringify({
 						name,
 						tag,
-						url: url || urlInput
+						url
 					})
 				});
 				open = false;

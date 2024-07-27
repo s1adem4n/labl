@@ -20,6 +20,11 @@
 	const getSearch = async () => {
 		if (loading) return;
 
+		if (search.trim() === '') {
+			searchResponse = null;
+			return;
+		}
+
 		loading = true;
 		searchResponse = await searchImages(search, true);
 		loading = false;
@@ -44,7 +49,6 @@
 	};
 
 	let dialogOpen = $state(false);
-	let dialogFileOpen = $state(false);
 	let url = $state('');
 </script>
 
@@ -90,21 +94,11 @@
 			>
 		{:else}
 			<span class="col-span-full text-center text-gray-400">Keine Bilder gefunden</span>
-			<button
-				class="col-span-full py-2 text-blue-500"
-				onclick={() => {
-					url = '';
-					dialogOpen = true;
-				}}
-			>
-				Manuell hinzufügen?
-			</button>
-			<button class="col-span-full text-blue-500" onclick={() => (dialogFileOpen = true)}
+			<button class="col-span-full text-blue-500" onclick={() => (dialogOpen = true)}
 				>Datei hochladen?</button
 			>
 		{/if}
 	</div>
 
-	<AddImage bind:open={dialogOpen} bind:url />
-	<AddImageFile bind:open={dialogFileOpen} />
+	<AddImageFile bind:open={dialogOpen} />
 </Dialog>

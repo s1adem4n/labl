@@ -84,5 +84,5 @@
 		}}>Erstellen</Button
 	>
 {:else}
-	<p>Template not found</p>
+	<p>Vorlage konnte nicht gefunden werden.</p>
 {/if}
