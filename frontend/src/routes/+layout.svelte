@@ -35,6 +35,12 @@
 	});
 </script>
 
+<svelte:head>
+	{#if import.meta.env.PROD}
+		<script src="https://statify.bukohome.com/tracker.js"></script>
+	{/if}
+</svelte:head>
+
 <div class="mx-auto flex h-full w-full max-w-2xl flex-col gap-4 overflow-y-auto p-4">
 	{@render children()}
 </div>
