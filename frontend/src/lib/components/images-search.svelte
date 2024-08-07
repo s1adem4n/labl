@@ -86,7 +86,7 @@
 			>
 		{:else}
 			<span class="col-span-full text-center text-gray-400">Keine Bilder gefunden</span>
-			<button class="col-span-full text-blue-500" onclick={() => (dialogOpen = true)}
+			<button class="col-span-full text-blue-500" onclick={() => (fileDialogOpen = true)}
 				>Datei hochladen?</button
 			>
 		{/if}
