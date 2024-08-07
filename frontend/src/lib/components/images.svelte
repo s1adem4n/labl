@@ -91,7 +91,7 @@
 				placeholder="Suchen ..."
 			/>
 			<div
-				class="xs:grid-cols-2 contain-[size_paint_layout] grid h-full w-full grid-cols-1 gap-2 overflow-auto p-2 sm:grid-cols-3"
+				class="xs:grid-cols-2 grid w-full grid-cols-1 gap-2 overflow-auto p-2 sm:grid-cols-3"
 				bind:this={scrollContainer}
 			>
 				{#if filteredImages.length === 0}

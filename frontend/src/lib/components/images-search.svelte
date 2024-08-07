@@ -49,6 +49,7 @@
 	};
 
 	let dialogOpen = $state(false);
+	let fileDialogOpen = $state(false);
 	let url = $state('');
 </script>
 
@@ -100,5 +101,6 @@
 		{/if}
 	</div>
 
-	<AddImageFile bind:open={dialogOpen} />
+	<AddImage bind:open={dialogOpen} {url} />
+	<AddImageFile bind:open={fileDialogOpen} />
 </Dialog>
