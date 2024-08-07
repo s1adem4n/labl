@@ -62,7 +62,7 @@
 			<div class="flex h-full flex-col gap-3 overflow-y-scroll">
 				{#each tags as tag}
 					<button
-						class="text-left leading-snug"
+						class="text-left"
 						class:font-bold={tag === tagFilter}
 						class:underline={tag === tagFilter}
 						onclick={() => {
