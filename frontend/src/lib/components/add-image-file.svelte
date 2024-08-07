@@ -14,7 +14,7 @@
 </script>
 
 <Dialog bind:open title="Bild hinzufügen">
-	<div class="flex h-full flex-col items-center justify-center gap-2 p-2">
+	<div class="flex min-h-full flex-col items-center justify-center gap-2 p-2">
 		<div class="aspect-video w-full max-w-md rounded-xl bg-gray-100">
 			{#if file}
 				<img class="h-full w-full object-contain" src={URL.createObjectURL(file)} alt="Vorschau" />
