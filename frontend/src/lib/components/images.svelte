@@ -98,7 +98,7 @@
 					<span class="col-span-3 text-center text-gray-400">Keine Bilder gefunden</span>
 				{/if}
 
-				{#each filteredImages as image}
+				{#each filteredImages as image (image.id)}
 					<div
 						class="relative flex h-fit flex-col gap-1 rounded-xl border border-gray-200 p-2 shadow-sm"
 					>
