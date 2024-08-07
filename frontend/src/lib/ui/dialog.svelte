@@ -57,6 +57,8 @@
 				</button>
 			</div>
 		{/if}
-		{@render children?.()}
+		<div class="h-full overflow-y-auto">
+			{@render children?.()}
+		</div>
 	</div>
 </dialog>
