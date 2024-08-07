@@ -40,7 +40,7 @@ interface SearchInformation {
 	formattedTotalResults: string;
 }
 
-interface Item {
+export interface Item {
 	kind: string;
 	title: string;
 	htmlTitle: string;

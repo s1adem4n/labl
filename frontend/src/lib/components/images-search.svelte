@@ -5,6 +5,7 @@
 	import AddImage from './add-image.svelte';
 	import { Dialog } from '$lib/ui';
 	import AddImageFile from './add-image-file.svelte';
+	import ImagesSearchImage from './images-search-image.svelte';
 
 	let {
 		open = $bindable()
@@ -72,23 +73,13 @@
 	<div class="xs:grid-cols-3 grid grid-cols-2 gap-2 overflow-y-auto p-2 sm:grid-cols-4">
 		{#if searchResponse}
 			{#each searchResponse.items as item}
-				<div class="flex flex-col gap-2 rounded-xl border border-gray-200 p-2">
-					<div class="relative flex aspect-square w-full overflow-hidden rounded-md">
-						<img
-							class="h-full w-full object-contain text-transparent"
-							src={item.link}
-							alt={item.title}
-						/>
-					</div>
-					<span class="h-px w-full bg-gray-200"></span>
-					<button
-						class="text-blue-500"
-						onclick={() => {
-							url = item.link;
-							dialogOpen = true;
-						}}>Hinzufügen</button
-					>
-				</div>
+				<ImagesSearchImage
+					{item}
+					onclick={() => {
+						url = item.link;
+						dialogOpen = true;
+					}}
+				/>
 			{/each}
 			<button class="col-span-full py-2 text-blue-500" onclick={getMore}
 				>{loading ? 'Lade ...' : 'Mehr laden'}</button
