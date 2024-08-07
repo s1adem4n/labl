@@ -59,7 +59,7 @@
 	<div class="flex h-full w-full">
 		<div class="xs:min-w-48 flex flex-col gap-2 border-r border-gray-200 p-4">
 			<span class="-mt-2 text-xl font-bold">Bilder</span>
-			<div class="flex h-full flex-col gap-3 overflow-scroll">
+			<div class="flex h-full flex-col gap-3 overflow-y-scroll">
 				{#each tags as tag}
 					<button
 						class="text-left leading-snug"
