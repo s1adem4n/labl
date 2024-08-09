@@ -11,8 +11,9 @@ type ElementOptions struct {
 type Element struct {
 	Type ElementType `json:"type"`
 	// The name of the resource
-	Resource string         `json:"resource"`
-	Position Position       `json:"position"`
-	Size     Size           `json:"size"`
-	Options  ElementOptions `json:"options"`
+	Resource      string         `json:"resource"`
+	ColorResource string         `json:"colorResource"`
+	Position      Position       `json:"position"`
+	Size          Size           `json:"size"`
+	Options       ElementOptions `json:"options"`
 }

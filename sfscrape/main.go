@@ -86,7 +86,7 @@ func fixNames(names []string) []string {
 	return fixedNames
 }
 
-func main() {
+func stealDesigns() {
 	file, err := os.Open("data.json")
 	if err != nil {
 		slog.Error("can't open data file", "err", err)
@@ -144,5 +144,82 @@ func main() {
 
 			slog.Info("saved design", "category", title, "design", fixedNames[i])
 		}
+	}
+}
+
+type Product struct {
+	Thumbnail string `json:"thumbnail"`
+}
+
+type Element struct {
+	Category string       `json:"category"`
+	Products [][1]Product `json:"products"`
+}
+
+func stealFrames() {
+	file, err := os.Open("frames.json")
+	if err != nil {
+		slog.Error("can't open frames file", "err", err)
+		return
+	}
+	defer file.Close()
+
+	var elements []Element
+	err = json.NewDecoder(file).Decode(&elements)
+	if err != nil {
+		slog.Error("can't decode frames file", "err", err)
+		return
+	}
+
+	ticker := time.NewTicker(200 * time.Millisecond)
+	length := len(elements)
+	for i, element := range elements {
+		slog.Info("processing element", "category", element.Category, "progress", i, "of", length)
+
+		os.MkdirAll(filepath.Join("frames", element.Category), 0755)
+
+		lengthProducts := len(element.Products)
+		for j, product := range element.Products {
+			<-ticker.C
+			slog.Info("processing product", "category", element.Category, "progress", j, "of", lengthProducts)
+
+			res, err := http.Get(BaseURL + product[0].Thumbnail)
+			if err != nil {
+				slog.Error("can't get product", "err", err)
+				return
+			}
+			defer res.Body.Close()
+
+			file, err := os.Create(
+				filepath.Join("frames", element.Category, fmt.Sprintf("%d.png", j)),
+			)
+			if err != nil {
+				slog.Error("can't create product file", "err", err)
+				return
+			}
+			defer file.Close()
+
+			_, err = file.ReadFrom(res.Body)
+			if err != nil {
+				slog.Error("can't save product file", "err", err)
+				return
+			}
+
+		}
+	}
+}
+
+func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("usage: sfscrape [designs|frames]")
+		return
+	}
+
+	if os.Args[1] == "designs" {
+		stealDesigns()
+	} else if os.Args[1] == "frames" {
+		stealFrames()
+	} else {
+		fmt.Println("invalid argument")
 	}
 }

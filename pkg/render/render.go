@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"image"
+	"image/color"
 	_ "image/jpeg"
 	_ "image/png"
 	"labl/pkg/templates"
@@ -147,6 +148,22 @@ func (t *TemplateRenderer) Render() error {
 		}
 
 		for _, e := range t.Template.Elements {
+			var color color.Color
+			var colorArray [3]int
+			if e.ColorResource != "" {
+				v, err := t.Resources.GetString(e.ColorResource)
+				if err != nil {
+					return err
+				}
+				color, err = HexToColor(v)
+				if err != nil {
+					return err
+				}
+				r, g, b, _ := color.RGBA()
+				colorArray = [3]int{int(r), int(g), int(b)}
+			} else {
+				colorArray = e.Options.Color
+			}
 			switch e.Type {
 			case templates.ElementTypeText:
 				v, err := t.Resources.GetString(e.Resource)
@@ -157,7 +174,7 @@ func (t *TemplateRenderer) Render() error {
 					Position: e.Position,
 					Size:     e.Size,
 					Font:     e.Options.Font,
-					Color:    e.Options.Color,
+					Color:    colorArray,
 					Text:     v,
 					Center:   e.Options.Center,
 				}
@@ -170,6 +187,8 @@ func (t *TemplateRenderer) Render() error {
 					CenterHorizontal: e.Options.CenterHorizontal,
 					Center:           e.Options.Center,
 					Size:             e.Size,
+					Color:            colorArray,
+					Resources:        &t.Resources,
 				}
 				image.Render(pdf, pos)
 			}

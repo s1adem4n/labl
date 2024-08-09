@@ -31,6 +31,22 @@
 					? 'Bild auswählen'
 					: `Bild ändern (${images.find((image) => image.id === inputs[name])?.name})`}
 			</button>
+		{:else if resource.type === 'color'}
+			<div class="relative flex h-6 items-center gap-2">
+				<input
+					class="h-6 w-6 appearance-none rounded-full border-none"
+					type="color"
+					bind:value={inputs[name]}
+					id={name}
+				/>
+				<span class="font-mono">
+					{inputs[name] || 'Farbe auswählen ...'}
+				</span>
+				<div
+					class="pointer-events-none absolute left-0 h-6 w-6 rounded-full"
+					style="background-color: {inputs[name] || 'black'}"
+				></div>
+			</div>
 		{/if}
 	</div>
 {/each}

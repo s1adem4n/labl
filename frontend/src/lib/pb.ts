@@ -17,7 +17,7 @@ interface TemplateSource {
 }
 
 interface TemplateResource {
-	type: 'font' | 'image' | 'text';
+	type: 'font' | 'image' | 'text' | 'color';
 	label: string;
 	source: TemplateSource;
 }
@@ -25,6 +25,7 @@ interface TemplateResource {
 interface TemplateElement {
 	type: 'text' | 'image';
 	resource: string;
+	colorResource?: string;
 	position: {
 		x: number;
 		y: number;

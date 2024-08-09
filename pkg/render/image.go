@@ -1,9 +1,12 @@
 package render
 
 import (
+	"bytes"
+	"image/color"
 	_ "image/jpeg"
-	_ "image/png"
+	"image/png"
 	"labl/pkg/templates"
+	"log/slog"
 	"math"
 
 	"github.com/go-pdf/fpdf"
@@ -16,6 +19,8 @@ type Image struct {
 	CenterHorizontal bool
 	Position         templates.Position
 	Size             templates.Size
+	Color            [3]int
+	Resources        *Resources
 }
 
 func (i Image) Render(pdf *fpdf.Fpdf, pos RenderPosition) {
@@ -54,5 +59,35 @@ func (i Image) Render(pdf *fpdf.Fpdf, pos RenderPosition) {
 	x = math.Max(0, x)
 	y = math.Max(0, y)
 
-	pdf.ImageOptions(i.Name, x, y, width, height, false, fpdf.ImageOptions{}, 0, "")
+	imageName := i.Name
+	if i.Color != [3]int{} {
+		imageName += randSeq(10)
+		data, err := i.Resources.GetBytes(i.Name)
+		if err != nil {
+			slog.Error("error while colorizing image", "err", err, "len", len(data))
+			return
+		}
+
+		img, err := png.Decode(bytes.NewBuffer(data))
+		if err != nil {
+			slog.Error("error while colorizing image", "err", err, "len", len(data))
+			return
+		}
+
+		c := color.RGBA{uint8(i.Color[0]), uint8(i.Color[1]), uint8(i.Color[2]), 255}
+		img = colorizeImage(c, img)
+		var encoded bytes.Buffer
+		err = png.Encode(&encoded, img)
+		if err != nil {
+			slog.Error("error while colorizing image", "err", err)
+			return
+		}
+
+		pdf.RegisterImageOptionsReader(imageName, fpdf.ImageOptions{
+			ImageType: "PNG",
+			ReadDpi:   true,
+		}, &encoded)
+	}
+
+	pdf.ImageOptions(imageName, x, y, width, height, false, fpdf.ImageOptions{}, 0, "")
 }

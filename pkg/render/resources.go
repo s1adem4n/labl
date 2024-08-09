@@ -20,6 +20,10 @@ func ValidateResource(resource templates.Resource, value any) bool {
 		if _, ok := value.([]byte); !ok {
 			return false
 		}
+	case templates.ResourceTypeColor:
+		if _, ok := value.(string); !ok {
+			return false
+		} // TODO: validate hex color
 	}
 	return true
 }

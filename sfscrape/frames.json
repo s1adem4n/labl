@@ -1,0 +1,3233 @@
+[
+  {
+    "category": "Eckig",
+    "products": [
+      [
+        {
+          "title": "Rahmen_00.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_00.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_00.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_01.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_01.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_01.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_02.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_02.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_02.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_03.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_03.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_03.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_04.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_04.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_04.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_05.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_05.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_05.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_06.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_06.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_06.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_07.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_07.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_07.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_08.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_08.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_08.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_09.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_09.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_09.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_10.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_10.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_10.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_11.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_11.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_11.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_12.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_12.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_12.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_13.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_13.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_13.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_14.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_14.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_14.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_15.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_15.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_15.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_16.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_16.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_16.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_17.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_17.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_17.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_18.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_18.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_18.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_19.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_19.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_19.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_20.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_20.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_20.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_21.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_21.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_21.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_22.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_22.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_22.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_23.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_23.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_23.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_24.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_24.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_24.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_25.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_25.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_25.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_26.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_26.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_26.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_27.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_27.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_27.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_28.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_28.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_28.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_29.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_29.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_29.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_30.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_30.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_30.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_31.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_31.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_31.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_32.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_32.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_32.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_33.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_33.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_33.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_34.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_34.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_34.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_35.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_35.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_35.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_36.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_36.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_36.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_37.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_37.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_37.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_38.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_38.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_38.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_39.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_39.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_39.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_40.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_40.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_40.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_41.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_41.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_41.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_42.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_42.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_42.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_43.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_43.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_43.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_44.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_44.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_44.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_45.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_45.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_45.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_46.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_46.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_46.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_47.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_47.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_47.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_65.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_65.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/eckig/Rahmen_65.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 646,
+                "resizeToH": 338,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "category": "Oval",
+    "products": [
+      [
+        {
+          "title": "Rahmen_01.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_01.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_01.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_02.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_02.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_02.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_03.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_03.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_03.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_04.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_04.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_04.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_05.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_05.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_05.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_06.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_06.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_06.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_07.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_07.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_07.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_08.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_08.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_08.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_09.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_09.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_09.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_10.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_10.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_10.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_11.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_11.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_11.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_12.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_12.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/oval/Rahmen_12.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 640,
+                "resizeToH": 420,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "category": "Rund",
+    "products": [
+      [
+        {
+          "title": "Rahmen_01.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_01.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_01.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 510,
+                "resizeToH": 510,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_02.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_02.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_02.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 510,
+                "resizeToH": 510,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_03.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_03.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_03.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 510,
+                "resizeToH": 510,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_04.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_04.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_04.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 510,
+                "resizeToH": 510,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_05.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_05.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_05.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 510,
+                "resizeToH": 510,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "title": "Rahmen_06.png",
+          "thumbnail": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_06.png",
+          "elements": [
+            {
+              "title": "Design",
+              "source": "fileadmin/etikettengestalter/normal/rahmen/rund/Rahmen_06.png",
+              "type": "image",
+              "parameters": {
+                "originX": "center",
+                "originY": "center",
+                "z": -1,
+                "fill": true,
+                "colors": ["#fff"],
+                "colorLinkGroup": 0,
+                "draggable": 0,
+                "rotatable": 0,
+                "resizable": 0,
+                "removable": 0,
+                "zChangeable": 1,
+                "lockUniScaling": false,
+                "uniScalingUnlockable": 0,
+                "angle": 0,
+                "price": 0,
+                "autoCenter": 0,
+                "replace": "design",
+                "replaceInAllViews": 0,
+                "autoSelect": 0,
+                "topped": 0,
+                "boundingBoxMode": "clipping",
+                "opacity": 1,
+                "excludeFromExport": 0,
+                "locked": 0,
+                "showInColorSelection": 0,
+                "boundingBox": 0,
+                "resizeToW": 510,
+                "resizeToH": 510,
+                "filter": 0,
+                "scaleMode": "fit",
+                "minScaleLimit": 0.01,
+                "advancedEditing": 0,
+                "uploadZone": 0
+              }
+            }
+          ]
+        }
+      ]
+    ]
+  }
+]

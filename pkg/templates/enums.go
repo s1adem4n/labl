@@ -43,17 +43,20 @@ const (
 	ResourceTypeText ResourceType = iota
 	ResourceTypeImage
 	ResourceTypeFont
+	ResourceTypeColor
 )
 
 var ResourceTypeStrings = map[ResourceType]string{
 	ResourceTypeText:  "text",
 	ResourceTypeImage: "image",
 	ResourceTypeFont:  "font",
+	ResourceTypeColor: "color",
 }
 var ResourceTypeValues = map[string]ResourceType{
 	"text":  ResourceTypeText,
 	"image": ResourceTypeImage,
 	"font":  ResourceTypeFont,
+	"color": ResourceTypeColor,
 }
 
 func (r ResourceType) MarshalJSON() ([]byte, error) {
